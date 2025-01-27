@@ -3,7 +3,7 @@ const apiKey = 'a96598887f8e4867bc130608252701';
 
 // Function to fetch and display the current weather and forecast
 function fetchWeather(city) {
-  const apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7&aqi=no&alerts=no`;
+  const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7&aqi=no&alerts=no`;
 
   fetch(apiUrl)
     .then(response => {
